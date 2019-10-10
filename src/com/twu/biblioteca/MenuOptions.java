@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 public class MenuOptions {
+
     public static void showMenu () {
         System.out.println("Menu");
         System.out.println("__________________________");
@@ -16,7 +17,14 @@ public class MenuOptions {
             BookList.addBook(book2);
             BookList.getBookList();
         }
-
+        else{
+            MenuOptions.errMessage();
+        }
     }
+
+        public static void errMessage() {
+            System.out.println("Please select a valid option!");
+
+        }
 
 }
