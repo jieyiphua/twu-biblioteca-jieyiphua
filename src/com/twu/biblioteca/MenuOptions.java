@@ -23,6 +23,9 @@ public class MenuOptions {
                 CheckOutBooks.checkIfInputIsAppropriate(bookUserInput);
                 break;
 
+            case "3":
+                System.out.println("Which book would you like to return?");
+
 
             case "0":
                 MenuOptions.exitMessage();

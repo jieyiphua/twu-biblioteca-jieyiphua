@@ -1,7 +1,5 @@
 package com.twu.biblioteca;
 
-import com.sun.tools.javac.comp.Check;
-
 public class CheckOutBooks {
 
     public static int numberOfBooks;
@@ -16,7 +14,6 @@ public class CheckOutBooks {
     }
 
     public static void checkIfInputIsAppropriate (String userInput) {
-
         if( BibliotecaApp.isInteger(userInput)) {
             int indexOfBook = Integer.parseInt(userInput);
             if (indexOfBook < BookList.bookList.size() && indexOfBook >= 0) {
