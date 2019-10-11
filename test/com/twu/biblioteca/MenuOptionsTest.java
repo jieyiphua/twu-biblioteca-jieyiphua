@@ -11,7 +11,7 @@ public class MenuOptionsTest {
        final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
        System.setOut(new PrintStream(outContent));
        MenuOptions.showMenu();
-       assertEquals("Menu" + "\n" + "__________________________" + "\n" + "Press 1 for List of Books" + "\n" + "Press 0 to Quit" + "\n", outContent.toString());
+       assertEquals("Menu" + "\n" + "__________________________" + "\n" + "Press 1 for List of Books" + "\n" + "Press 2 to Checkout Book" + "\n" + "Press 0 to Quit" + "\n", outContent.toString());
    }
 
    @Test
@@ -32,8 +32,11 @@ public class MenuOptionsTest {
 
    @Test
    public void validOptionOne() {
+      final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+      System.setOut(new PrintStream(outContent));
+      BookList.addBook(new Book("Harry Potter", "JK Rowling", 1000));
       MenuOptions.menuOptionList("1");
-      assertEquals("Harry Potter", BookList.bookList.get(0).bookName);
+      assertEquals("Book Name: " + "Harry Potter" + "\nAuthor: " + "JK Rowling" +"\nYear Published: " + 1000 + "\n\n",outContent.toString());
    }
 
    @Test

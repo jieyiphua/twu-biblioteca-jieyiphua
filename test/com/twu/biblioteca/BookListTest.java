@@ -29,6 +29,6 @@ public class BookListTest {
         BookList.addBook(book1);
         BookList.addBook(book2);
         BookList.getBookList();
-        assertEquals("Book Name: " + book1.bookName + "\nAuthor: " + book1.author +"\nYear Published: " + book1.yearPublished + "\n" + "Book Name: " + book2.bookName + "\nAuthor: " + book2.author +"\nYear Published: " + book2.yearPublished + "\n",outContent.toString());
+        assertEquals("Book Name: " + book1.bookName + "\nAuthor: " + book1.author +"\nYear Published: " + book1.yearPublished + "\n\n" + "Book Name: " + book2.bookName + "\nAuthor: " + book2.author +"\nYear Published: " + book2.yearPublished + "\n\n",outContent.toString());
     }
 }
