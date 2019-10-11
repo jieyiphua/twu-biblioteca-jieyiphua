@@ -15,9 +15,9 @@ public class CheckOutBooks {
 
     public static void checkIfInputIsAppropriate (String userInput) {
         if( BibliotecaApp.isInteger(userInput)) {
-            int indexOfBook = Integer.parseInt(userInput);
+            int indexOfBook = Integer.parseInt(userInput) - 1;
             if (indexOfBook < BookList.bookList.size() && indexOfBook >= 0) {
-                Book bookToCheckOut = BookList.bookList.get(indexOfBook - 1);
+                Book bookToCheckOut = BookList.bookList.get(indexOfBook);
                 CheckOutBooks.canCheckOut(bookToCheckOut);
             } else {
                 System.out.println("Sorry, that book is not available");

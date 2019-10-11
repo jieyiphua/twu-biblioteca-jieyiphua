@@ -35,6 +35,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,7 +65,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ReturnBooksTest">
+  <component name="RunManager" selected="JUnit.All in TWU_Biblioteca-master">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca-master" />
@@ -82,22 +83,6 @@
       <module name="TWU_Biblioteca-master" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckOutBooksTest.currentCheckOutBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.CheckOutBooksTest" />
-      <option name="METHOD_NAME" value="currentCheckOutBook" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,13 +118,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReturnBooksTest.returnMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBooksTest" />
+      <option name="METHOD_NAME" value="returnMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
+        <item itemvalue="JUnit.ReturnBooksTest.returnMessage" />
+        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.ReturnBooksTest" />
         <item itemvalue="JUnit.ReturnBooksTest.canReturn" />
-        <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
-        <item itemvalue="JUnit.CheckOutBooksTest.currentCheckOutBook" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +157,7 @@
       <workItem from="1570531475460" duration="3530000" />
       <workItem from="1570571330385" duration="2071000" />
       <workItem from="1570596072772" duration="11457000" />
-      <workItem from="1570693757390" duration="26287000" />
+      <workItem from="1570693757390" duration="29717000" />
     </task>
     <servers />
   </component>
@@ -175,5 +176,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/twu/biblioteca/MenuOptions.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

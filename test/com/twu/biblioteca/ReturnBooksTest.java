@@ -1,8 +1,6 @@
 package com.twu.biblioteca;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -28,4 +26,15 @@ public class ReturnBooksTest {
         ReturnBooks.canReturn(bookCanReturn);
         assertEquals("That is not a valid book to return.\n", outContent.toString());
     }
+
+    @Test
+    public void returnMessage() {
+        final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        Book bookCanReturn = new Book("Return","Return",1000);
+        ReturnBooks.returnMessage(bookCanReturn);
+        assertEquals("Thank you for returning the book\n" + "Book Name: " + "Return" + "\nAuthor: " + "Return" +"\nYear Published: " + 1000 + "\n\n", outContent.toString());
+    }
+
+
 }

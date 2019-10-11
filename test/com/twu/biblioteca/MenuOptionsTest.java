@@ -11,7 +11,7 @@ public class MenuOptionsTest {
        final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
        System.setOut(new PrintStream(outContent));
        MenuOptions.showMenu();
-       assertEquals("Menu" + "\n" + "__________________________" + "\n" + "Press 1 for List of Books" + "\n" + "Press 2 to Checkout Book" + "\n" + "Press 0 to Quit" + "\n", outContent.toString());
+       assertEquals("Menu" + "\n" + "__________________________" + "\n" + "Press 1 for List of Books" + "\n" + "Press 2 to Checkout Book" + "\n" + "Press 3 to Return Book"  + "\n" + "Press 0 to Quit" + "\n", outContent.toString());
    }
 
    @Test
