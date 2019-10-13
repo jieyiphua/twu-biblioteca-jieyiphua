@@ -8,6 +8,7 @@ public class MenuOptions {
         System.out.println("Press 1 for List of Books");
         System.out.println("Press 2 to Checkout Book");
         System.out.println("Press 3 to Return Book");
+        System.out.println("Press 4 for List of Movies");
         System.out.println("Press 0 to Quit");
     }
 
@@ -29,6 +30,10 @@ public class MenuOptions {
                 ReturnBooks.getReturnBookList();
                 String returnBookUserInput = BibliotecaApp.getUserInput();
                 ReturnBooks.checkIfInputIsAppropriate(returnBookUserInput);
+                break;
+
+            case "4":
+                MovieList.getMovieList();
                 break;
 
             case "0":

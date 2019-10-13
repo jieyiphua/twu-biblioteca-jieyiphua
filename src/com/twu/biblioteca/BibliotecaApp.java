@@ -7,6 +7,7 @@ public class BibliotecaApp {
     public static void main(String[] args) {
         welcomeMessage();
         BookList.originalBookList();
+        MovieList.originalMovieList();
         MenuOptions.showMenu();
         String userInput = getUserInput();
         MenuOptions.menuLoop(userInput);
