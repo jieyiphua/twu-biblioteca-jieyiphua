@@ -22,7 +22,7 @@ public class Movie {
                 this.director +
                 "\nYear Released: " +
                 this.yearReleased +
-                "\n Movie Rating: " +
+                "\nMovie Rating: " +
                 this.movieRating + "\n");
     }
 }

@@ -13,7 +13,7 @@ public class MovieTest {
         System.setOut(new PrintStream(outContent));
         Movie movie1 = new Movie("name","director",1000,2);
         movie1.showMovie();
-        assertEquals("Movie Name: " + "name" + "\nDirector: " + "director" + "\nYear Released: " + 1000 + "\n Movie Rating: " + 2 + "\n\n",outContent.toString());
+        assertEquals("Movie Name: " + "name" + "\nDirector: " + "director" + "\nYear Released: " + 1000 + "\nMovie Rating: " + 2 + "\n\n",outContent.toString());
     }
 
 }

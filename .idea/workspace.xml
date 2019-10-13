@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14b5a160-0b0a-41e2-99da-e002cd2dbdeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MovieTest.showsMovieInformation">
+  <component name="RunManager" selected="JUnit.All in TWU_Biblioteca-master">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca-master" />
@@ -80,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BibliotecaAppTest.printWelcomeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -89,8 +90,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaAppTest" />
-      <option name="METHOD_NAME" value="printWelcomeMessage" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieListTest.canGetBookList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieListTest" />
+      <option name="METHOD_NAME" value="canGetBookList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,29 +128,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnBooksTest.returnMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBooksTest" />
-      <option name="METHOD_NAME" value="returnMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
+        <item itemvalue="JUnit.MovieListTest" />
+        <item itemvalue="JUnit.MovieListTest.canGetBookList" />
         <item itemvalue="JUnit.MovieTest.showsMovieInformation" />
         <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.BibliotecaAppTest.printWelcomeMessage" />
-        <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
-        <item itemvalue="JUnit.ReturnBooksTest.returnMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +153,7 @@
       <workItem from="1570596072772" duration="11457000" />
       <workItem from="1570693757390" duration="30688000" />
       <workItem from="1570773915238" duration="329000" />
-      <workItem from="1571004788918" duration="1751000" />
+      <workItem from="1571004788918" duration="2609000" />
     </task>
     <servers />
   </component>
