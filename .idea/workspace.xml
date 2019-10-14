@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14b5a160-0b0a-41e2-99da-e002cd2dbdeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutMovies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MenuOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutMovies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/MovieList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/MovieList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuOptionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MenuOptionsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +61,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MovieListTest.canGetBookList">
+  <component name="RunManager" selected="JUnit.MovieListTest.testGetMovieList">
+    <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
+      <module name="TWU_Biblioteca-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MenuOptionsTest.testMovieCheckoutMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
@@ -76,22 +86,6 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuOptionsTest" />
       <option name="METHOD_NAME" value="testMovieCheckoutMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MenuOptionsTest.testReturnMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca-master" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuOptionsTest" />
-      <option name="METHOD_NAME" value="testReturnMessage" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -113,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieListTest.canGetBookList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieListTest.testGetMovieList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +117,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieListTest" />
-      <option name="METHOD_NAME" value="canGetBookList" />
+      <option name="METHOD_NAME" value="testGetMovieList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieListTest.canGetBookList" />
+        <item itemvalue="JUnit.MovieListTest.testGetMovieList" />
+        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.MovieTest" />
         <item itemvalue="JUnit.MenuOptionsTest.testMovieCheckoutMessage" />
         <item itemvalue="JUnit.MenuOptionsTest.testShowMenu" />
-        <item itemvalue="JUnit.MenuOptionsTest.testReturnMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +165,7 @@
       <workItem from="1570773915238" duration="329000" />
       <workItem from="1571004788918" duration="3823000" />
       <workItem from="1571020214365" duration="9296000" />
-      <workItem from="1571092309178" duration="3169000" />
+      <workItem from="1571092309178" duration="3679000" />
     </task>
     <servers />
   </component>

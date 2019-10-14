@@ -28,15 +28,16 @@ public class MovieListTest {
     }
 
     @Test
-    public void canAddMovie() {
+    public void testAddMovie() {
         Movie expectedMovie = MovieList.addMovie(movieSample).get(0);
         assertEquals(movieSample, expectedMovie);
     }
 
     @Test
-    public void canGetBookList() {
+    public void testGetMovieList() {
         MovieList.addMovie(movieSample);
         MovieList.addMovie(movieSample2);
+        movieSample2.checkedOut = true;
         MovieList.getMovieList();
         assertEquals(
                 "Movie Name: " +
@@ -47,14 +48,6 @@ public class MovieListTest {
                 movieSample.yearReleased +
                 "\nMovie Rating: " +
                 movieSample.movieRating +
-                "\n\nMovie Name: " +
-                movieSample2.movieName +
-                "\nDirector: " +
-                movieSample2.director +
-                "\nYear Released: " +
-                movieSample2.yearReleased +
-                "\nMovie Rating: " +
-                movieSample2.movieRating +
                 "\n\n", byteArrayOutputStream.toString());
     }
 }
