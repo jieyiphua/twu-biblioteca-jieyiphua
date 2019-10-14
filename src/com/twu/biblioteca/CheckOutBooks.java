@@ -2,8 +2,6 @@ package com.twu.biblioteca;
 
 public class CheckOutBooks {
 
-    public static int numberOfBooks;
-
     public static void canCheckOut(Book book) {
         if (book.checkedOut) {
             System.out.println("Sorry, that book is not available");
@@ -38,7 +36,6 @@ public class CheckOutBooks {
             int numberShown = i + 1;
             System.out.println("Press " + numberShown + " to checkout book below");
             bookChosen.showBook();
-            numberOfBooks++;
         }
     }
 }
