@@ -32,6 +32,7 @@ public class MenuOptionsTest {
       assertThat(byteArrayOutputStream.toString(), containsString("Press 2 to Checkout Book"));
       assertThat(byteArrayOutputStream.toString(), containsString("Press 3 to Return Book"));
       assertThat(byteArrayOutputStream.toString(), containsString("Press 4 for List of Movies"));
+      assertThat(byteArrayOutputStream.toString(), containsString("Press 5 to Checkout Movie"));
       assertThat(byteArrayOutputStream.toString(), containsString("Press 0 to Quit"));
    }
 
@@ -48,15 +49,21 @@ public class MenuOptionsTest {
    }
 
    @Test
-   public void testCheckoutMessage() {
-      MenuOptions.checkoutMessage();
+   public void testBookCheckoutMessage() {
+      MenuOptions.bookCheckoutMessage();
       assertEquals("Which book would you like to check out?\n", byteArrayOutputStream.toString());
    }
 
    @Test
    public void testReturnMessage() {
-      MenuOptions.returnMessage();
+      MenuOptions.bookReturnMessage();
       assertEquals("Which book would you like to return?\n", byteArrayOutputStream.toString());
+   }
+
+   @Test
+   public void testMovieCheckoutMessage() {
+      MenuOptions.movieCheckoutMessage();
+      assertEquals("Which movie would you like to check out?\n", byteArrayOutputStream.toString());
    }
 
    @Test
@@ -86,6 +93,6 @@ public class MenuOptionsTest {
    }
 
    /*
-   Test for option 3 and 2.
+   Test for option 3, 2 & Menu Loop. However, they have input required.
     */
 }

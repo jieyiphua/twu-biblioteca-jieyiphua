@@ -9,6 +9,7 @@ public class MenuOptions {
         System.out.println("Press 2 to Checkout Book");
         System.out.println("Press 3 to Return Book");
         System.out.println("Press 4 for List of Movies");
+        System.out.println("Press 5 to Checkout Movie");
         System.out.println("Press 0 to Quit");
     }
 
@@ -19,14 +20,14 @@ public class MenuOptions {
                 break;
 
             case "2":
-                MenuOptions.checkoutMessage();
+                MenuOptions.bookCheckoutMessage();
                 CheckOutBooks.showBookListSelection();
                 String checkOutBookUserInput = BibliotecaApp.getUserInput();
                 CheckOutBooks.checkIfInputIsAppropriate(checkOutBookUserInput);
                 break;
 
             case "3":
-                MenuOptions.returnMessage();
+                MenuOptions.bookReturnMessage();
                 ReturnBooks.getReturnBookList();
                 String returnBookUserInput = BibliotecaApp.getUserInput();
                 ReturnBooks.checkIfInputIsAppropriate(returnBookUserInput);
@@ -34,6 +35,13 @@ public class MenuOptions {
 
             case "4":
                 MovieList.getMovieList();
+                break;
+
+            case "5":
+                MenuOptions.bookCheckoutMessage();
+                CheckOutMovies.showMovieListSelection();
+                String checkOutMovieUserInput = BibliotecaApp.getUserInput();
+                CheckOutMovies.checkIfInputIsAppropriate(checkOutMovieUserInput);
                 break;
 
             case "0":
@@ -63,11 +71,15 @@ public class MenuOptions {
         System.out.println("Thank you for using Biblioteca!");
     }
 
-    public static void checkoutMessage() {
+    public static void bookCheckoutMessage() {
         System.out.println("Which book would you like to check out?");
     }
 
-    public static void returnMessage() {
+    public static void movieCheckoutMessage() {
+        System.out.println("Which movie would you like to check out?");
+    }
+
+    public static void bookReturnMessage() {
         System.out.println("Which book would you like to return?");
     }
 }
