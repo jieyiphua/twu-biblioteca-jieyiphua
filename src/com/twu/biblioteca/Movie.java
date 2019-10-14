@@ -6,6 +6,7 @@ public class Movie {
     public String director;
     public int yearReleased;
     public int movieRating;
+    public boolean checkedOut;
 
     public Movie(String movieName, String director, int yearReleased, int movieRating) {
         this.movieName = movieName;
