@@ -19,9 +19,16 @@ public class BookTest {
     }
 
     @Test
-    public void showsBookInformation() {
+    public void testShowBook() {
         bookSample.showBook();
-        assertEquals("Book Name: " + bookSample.bookName + "\nAuthor: " + bookSample.author +"\nYear Published: " + bookSample.yearPublished + "\n\n", byteArrayOutputStream.toString());
+        assertEquals(
+                "Book Name: " +
+                bookSample.bookName +
+                "\nAuthor: " +
+                bookSample.author +
+                "\nYear Published: " +
+                bookSample.yearPublished +
+                "\n\n", byteArrayOutputStream.toString());
     }
 
 
