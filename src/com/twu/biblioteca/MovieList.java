@@ -21,8 +21,8 @@ public class MovieList {
 
     public static void getMovieList() {
         for (int i = 0; i < movieList.size(); i ++ ) {
-                Movie chosen = movieList.get(i);
-                chosen.showMovie();
-            }
+            Movie chosen = movieList.get(i);
+            chosen.showMovie();
+        }
     }
 }
