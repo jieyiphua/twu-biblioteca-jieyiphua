@@ -1,57 +1,91 @@
 package com.twu.biblioteca;
 
+import org.junit.Before;
 import org.junit.Test;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import static org.junit.Assert.*;
+
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 public class MenuOptionsTest {
-   @Test
-    public void showMenu() {
-       final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-       System.setOut(new PrintStream(outContent));
-       MenuOptions.showMenu();
-       assertEquals("Menu" + "\n" + "__________________________" + "\n" + "Press 1 for List of Books" + "\n" + "Press 2 to Checkout Book" + "\n" + "Press 3 to Return Book"  + "\n" + "Press 4 for List of Movies"  + "\n" + "Press 0 to Quit" + "\n", outContent.toString());
+
+   private static ByteArrayOutputStream byteArrayOutputStream;
+   private static Book bookSample;
+   private static Book bookSample2;
+
+   @Before
+   public void setUp() {
+      byteArrayOutputStream = new ByteArrayOutputStream();
+      System.setOut(new PrintStream(byteArrayOutputStream));
+      bookSample = new Book("BookName","Author",1000);
+      bookSample2 = new Book("BookName2","Author2",2000);
    }
 
    @Test
-   public void errMessage() {
-      final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(outContent));
+   public void testShowMenu() {
+      MenuOptions.showMenu();
+      assertThat(byteArrayOutputStream.toString(), containsString("Menu"));
+      assertThat(byteArrayOutputStream.toString(), containsString("Press 1 for List of Books"));
+      assertThat(byteArrayOutputStream.toString(), containsString("Press 2 to Checkout Book"));
+      assertThat(byteArrayOutputStream.toString(), containsString("Press 3 to Return Book"));
+      assertThat(byteArrayOutputStream.toString(), containsString("Press 4 for List of Movies"));
+      assertThat(byteArrayOutputStream.toString(), containsString("Press 0 to Quit"));
+   }
+
+   @Test
+   public void testErrMessage() {
       MenuOptions.errMessage();
-      assertEquals("Please select a valid option!\n", outContent.toString());
+      assertEquals("Please select a valid option!\n", byteArrayOutputStream.toString());
    }
 
    @Test
-   public void exitMessage() {
-      final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(outContent));
+   public void testExitMessage() {
       MenuOptions.exitMessage();
-      assertEquals("Thank you for using Biblioteca!\n", outContent.toString());
+      assertEquals("Thank you for using Biblioteca!\n", byteArrayOutputStream.toString());
    }
 
    @Test
-   public void validOptionOne() {
-      final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(outContent));
-      BookList.addBook(new Book("Harry Potter", "JK Rowling", 1000));
+   public void testCheckoutMessage() {
+      MenuOptions.checkoutMessage();
+      assertEquals("Which book would you like to check out?\n", byteArrayOutputStream.toString());
+   }
+
+   @Test
+   public void testReturnMessage() {
+      MenuOptions.returnMessage();
+      assertEquals("Which book would you like to return?\n", byteArrayOutputStream.toString());
+   }
+
+   @Test
+   public void testValidOptionOne() {
+      BookList.addBook(bookSample);
       MenuOptions.menuOptionList("1");
-      assertEquals("Book Name: " + "Harry Potter" + "\nAuthor: " + "JK Rowling" +"\nYear Published: " + 1000 + "\n\n",outContent.toString());
+      assertEquals(
+              "Book Name: " +
+                      bookSample.bookName +
+                      "\nAuthor: " +
+                      bookSample.author +
+                      "\nYear Published: " +
+                      bookSample.yearPublished +
+                      "\n\n", byteArrayOutputStream.toString());
    }
 
    @Test
-   public void validOptionZero() {
-      final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(outContent));
+   public void testValidOptionZero() {
       MenuOptions.menuOptionList("0");
-      assertEquals("Thank you for using Biblioteca!\n", outContent.toString());
+      assertEquals("Thank you for using Biblioteca!\n", byteArrayOutputStream.toString());
    }
 
    @Test
-   public void nonValidOptionRejected() {
-      final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-      System.setOut(new PrintStream(outContent));
+   public void testNonValidOption() {
       MenuOptions.menuOptionList("pop");
-      assertEquals("Please select a valid option!\n", outContent.toString());
+      assertEquals("Please select a valid option!\n", byteArrayOutputStream.toString());
    }
+
+   /*
+   Test for option 3 and 2.
+    */
 }

@@ -19,14 +19,14 @@ public class MenuOptions {
                 break;
 
             case "2":
-                System.out.println("Which book would you like to check out?");
+                MenuOptions.checkoutMessage();
                 CheckOutBooks.showBookListSelection();
                 String checkOutBookUserInput = BibliotecaApp.getUserInput();
                 CheckOutBooks.checkIfInputIsAppropriate(checkOutBookUserInput);
                 break;
 
             case "3":
-                System.out.println("Which book would you like to return?");
+                MenuOptions.returnMessage();
                 ReturnBooks.getReturnBookList();
                 String returnBookUserInput = BibliotecaApp.getUserInput();
                 ReturnBooks.checkIfInputIsAppropriate(returnBookUserInput);
@@ -61,5 +61,13 @@ public class MenuOptions {
 
     public static void exitMessage() {
         System.out.println("Thank you for using Biblioteca!");
+    }
+
+    public static void checkoutMessage() {
+        System.out.println("Which book would you like to check out?");
+    }
+
+    public static void returnMessage() {
+        System.out.println("Which book would you like to return?");
     }
 }
