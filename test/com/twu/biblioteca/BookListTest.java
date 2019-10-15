@@ -37,6 +37,7 @@ public class BookListTest {
     public void testGetBookList() {
         BookList.addBook(bookSample);
         BookList.addBook(bookSample2);
+        bookSample2.checkedOut = true;
         BookList.getBookList();
         assertEquals(
             "Book Name: " +
@@ -44,12 +45,7 @@ public class BookListTest {
             "\nAuthor: " +
             bookSample.author +
             "\nYear Published: " +
-            bookSample.yearPublished + "\n\n" +
-            "Book Name: " +
-            bookSample2.bookName +
-            "\nAuthor: " +
-            bookSample2.author +
-            "\nYear Published: " +
-            bookSample2.yearPublished + "\n\n", byteArrayOutputStream.toString());
+            bookSample.yearPublished
+            + "\n\n", byteArrayOutputStream.toString());
     }
 }
