@@ -8,6 +8,7 @@ public class BibliotecaApp {
         welcomeMessage();
         BookList.originalBookList();
         MovieList.originalMovieList();
+        UserList.originalUserList();
         MenuOptions.showMenu();
         String userInput = getUserInput();
         MenuOptions.menuLoop(userInput);
