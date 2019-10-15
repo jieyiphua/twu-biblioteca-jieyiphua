@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14b5a160-0b0a-41e2-99da-e002cd2dbdeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/CheckOutMoviesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutMovies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/CheckOutMovies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/UserList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/UserListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserListTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Arquillian JUnit Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -44,6 +44,9 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.twu.biblioteca" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.twu.biblioteca" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -60,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
+  <component name="RunManager" selected="JUnit.UserListTest.testAddUser">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca-master" />
@@ -97,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -106,13 +109,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBooksTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MovieTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReturnBooksTest.testCheckIfValidInputIsAppropriate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserListTest.testAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca-master" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +124,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ReturnBooksTest" />
-      <option name="METHOD_NAME" value="testCheckIfValidInputIsAppropriate" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.UserListTest" />
+      <option name="METHOD_NAME" value="testAddUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserListTest.testAddUser" />
         <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.CheckOutMoviesTest" />
         <item itemvalue="JUnit.All in TWU_Biblioteca-master" />
-        <item itemvalue="JUnit.ReturnBooksTest.testCheckIfValidInputIsAppropriate" />
-        <item itemvalue="JUnit.ReturnBooksTest" />
+        <item itemvalue="JUnit.MovieTest" />
+        <item itemvalue="JUnit.CheckOutMoviesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +158,7 @@
       <workItem from="1570773915238" duration="329000" />
       <workItem from="1571004788918" duration="3823000" />
       <workItem from="1571020214365" duration="9296000" />
-      <workItem from="1571092309178" duration="7987000" />
+      <workItem from="1571092309178" duration="12289000" />
     </task>
     <servers />
   </component>
