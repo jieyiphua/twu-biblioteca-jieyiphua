@@ -26,8 +26,8 @@ public class ReturnBooks {
         if( BibliotecaApp.isInteger(userInput)) {
             int indexOfBook = Integer.parseInt(userInput) - 1;
             if (indexOfBook < BookList.bookList.size() && indexOfBook >= 0) {
-                Book bookToCheckOut = BookList.bookList.get(indexOfBook);
-                ReturnBooks.canReturn(bookToCheckOut);
+                Book bookToReturn = BookList.bookList.get(indexOfBook);
+                ReturnBooks.canReturn(bookToReturn);
             } else {
                 System.out.println("Sorry, that book is not available");
             }
